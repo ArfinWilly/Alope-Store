@@ -1,0 +1,48 @@
+/* CSS untuk Input Pemesanan */
+:root {
+    --ivory:#F9F5EA;
+    --old-black:#292827;
+}
+
+.form-container {
+    background: #FFFFF0; /* Ivory */
+    box-shadow: 8px 8px 16px #b3b3b3, -8px -8px 16px #ffffff; /* Tetap mempertahankan efek volumetrik */
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+    width: 400px;
+}
+
+/* Style Input */
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 4px 4px 8px #d1d1d1, inset -4px -4px 8px #ffffff;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Style submit button*/
+.form-container .submit-btn {
+    width: 95%;
+    padding: 12px;
+    font-size: 1em;
+    color: #fff;
+    background-color: var(--old-black); /* Warna old-black */
+    color: var(--ivory);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 4px 4px 8px #b3b3b3, -4px -4px 8px #ffffff;
+}
+
+.form-container .submit-btn:hover {
+    background-color: #1F1F1F; /* Warna lebih gelap saat hover */
+}

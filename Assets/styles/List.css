@@ -1,0 +1,95 @@
+:root {
+    --ivory:#F9F5EA;
+    --old-black:#292827;
+}
+
+
+.searc {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.searc input[type="text"] {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px; /* Ukuran yang cukup ideal */
+    margin-right: 10px; /* Jarak antara input dan tombol */
+}
+
+.searc button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: var(--old-black) ;
+    color: var(--ivory);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.searc button:hover {
+    background-color: #1F1F1F; /* Warna old-black lebih gelap saat hover */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5,minmax(150px,1fr));
+    gap: 10px;
+    padding: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    
+    margin-top: 20px;
+    font-size: 1rem;
+    height: 350px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card-category {
+    font-size: 0.9rem;
+    color: gray;
+    margin: 5px 0;
+}
+
+.card-price {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: darkgreen;
+    margin: 5px 0;
+}

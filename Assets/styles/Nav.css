@@ -1,0 +1,105 @@
+:root {
+    --ivory:#F9F5EA;
+    --old-black:#292827;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: var(--ivory);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between ;
+    font-family: safira march;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.navbar-left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-center {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    align-content: center;
+    color: var(--old-black);
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    
+}
+
+.nav-item:hover {
+    color: var(--ivory); /* Warna hover */
+}
+
+.navbar-right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.btn-fill {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+}
+
+a.btn-fill:hover {
+    background-color: #0056b3;
+    border-color: #0065b3;
+}
+
+header h1 {
+    font-family: 'Hamsterly', serif;
+    text-align: center;
+    padding: 20px 40px;
+    color: var(--ivory);
+    background-color: var(--old-black);
+    margin-top: 20px;
+}

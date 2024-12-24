@@ -1,0 +1,178 @@
+:root {
+    --ivory:#F9F5EA;
+    --old-black:#292827;
+}
+
+/* Tombol Order-status */
+.order-status {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+/* Mengubah <a> menjadi tombol */
+a.a {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none; /* Hilangkan garis bawah pada <a> */
+    cursor: pointer;
+    border: 2px solid #007bff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.a {
+    background-color: transparent;
+    color: #007bff;
+}
+
+a.a.filled {
+    background-color: #007bff;
+    color: #fff;
+}
+
+a.a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Style untuk Pesan Pop-up */
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Style untuk Form Pembayaran */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Jarak antara elemen form */
+    width: 100%;
+}
+
+form input[type="number"],
+form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Form input mengisi seluruh lebar modal */
+    max-width: 275px;
+}
+
+form input[type="number"]:focus {
+    outline: none;
+    border-color: var(--old-black); /* Fokus dengan warna old-black */
+}
+
+form button {
+    background-color: var(--old-black); /* Warna old-black */
+    color: var(--ivory);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1F1F1F; /* Warna lebih gelap saat hover */
+}
+
+
+.message {
+    background-color: #f2f2f2;
+    width: 50%;
+    padding: 15px;
+    margin: 10px auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message:hover {
+    background-color: #ddd;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.date {
+    color: #999;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15px auto;
+    margin-top: 200px;
+    padding: 20px;
+    max-height: 80vh;
+    position: relative;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px
+    rgba(0, 0, 0, 0.3);
+}
+
+a.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.struk {
+    background-color: var(--old-black);
+    color: var(--ivory);
+    border: 2px solid var(--old-black);
+}
+
+a.struk:hover {
+    background-color: #1F1F1F;
+    border-color: #1F1F1F;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
